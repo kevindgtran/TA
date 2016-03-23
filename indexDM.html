@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="author" content="Kevin Tran">
+  <title>Kevin_Recruiter @ intuit</title>
+  <link rel="stylesheet" href="animateTemplates.css">
+  <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link href="indexDM-css.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+  <!--layering images horizantally to create endless landscape right direction-->
+<div class="layer-horizontal">
+  <img class="frame frame1" src="images/FirstFrame.png" alt="" />
+  <img class="frame frame1" src="images/ground.png" alt="" />
+  <img class="frame frame2" src="images/SiliconValley.png" alt="" />
+  <img class="frame frame2" src="images/ground.png" alt="" />
+  <img class="frame frame3" src="images/WelcomeTointuit.png" alt="" />
+  <img class="frame frame3" src="images/ground.png" alt="" />
+  <img class="frame frame4" src="images/Products_Frame.png" alt="" />
+  <img class="frame frame4" src="images/ground.png" alt="" />
+  <img class="frame frame5" src="images/Products_Frame2.png" alt="" />
+  <img class="frame frame5" src="images/ground.png" alt="" />
+  <img class="frame frame6" src="images/awards.png" alt="" />
+  <img class="frame frame6" src="images/ground.png" alt="" />
+  <img class="frame frame7" src="images/perks.png" alt="" />
+  <img class="frame frame7" src="images/ground.png" alt="" />
+  <img class="frame frame8" src="images/people.png" alt="" />
+  <img class="frame frame8" src="images/ground.png" alt="" />
+  <img class="frame frame9" src="images/FinalFrame.png" alt="" />
+  <img class="frame frame9" src="images/ground.png" alt="" />
+</div>
+
+<!-- Intro box -->
+<p class="introP"> Hi, I'm Kevin <br>follow me to learn about intuit</p>
+
+<!-- Ending box -->
+<p class="endingP"> Thanks for coming along!<br>want to learn more? <br> <a href="mailto:wymanwang_recruiter@intuit.com?subject=Engineering Manager role at intuit"> <ins> email a recruiter </ins></a></p>
+
+<!-- contact box on last frame -->
+<!-- <div class="contact-center">
+  <div class="tite-contact">
+    <div class="contact-box">
+      <div class="contact-box-name">
+      <input type="text" name="firstName" id="name" maxlength="25">
+      </div>
+      <div class="contact-box-title">
+      <input type="text" name="title" id="title" maxlength="75">
+      </div>
+      <div class="contact-box-resume">
+      <input type="file">
+      </div>
+      <div class="container-box-submit">
+      <button type="button" class="btn btn-info">Submit!</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- main character -->
+<div id="kevin-container">
+  <div id="kevin">
+    <div id="kevin-slides">
+    </div>
+  </div>
+</div>
+
+<!-- friends on last frame -->
+<div class="friends">
+  <img class="Amanda" src="images/Amanda1.png" alt="" />
+  <img class="Chris" src="images/ChrisWavingRightSize2.png" alt="" />
+</div>
+
+<!-- scroll right blinking directions -->
+<div id="splash-container">
+  <div class="follow animated shake">&raquo;&raquo; (Scroll Right) &raquo;&raquo;</div>
+</div>
+
+<!-- clouds -->
+<img class="cloud1" src="images/Cloud1.png" alt="" />
+<img class="cloud2" src="images/Cloud2.png" alt="" />
+<img class="cloud3" src="images/Cloud3.png" alt="" />
+<img class="cloud4" src="images/Cloud4.png" alt="" />
+
+<!-- birds flying on opening frame -->
+<img class="bird1" src="images/Birds1.png" alt="" />
+<img class="bird2" src="images/Birds2.png" alt="" />
+
+<script src="indexDM-js.js" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+// friends bouncingInRight on click of contact form
+$(function(){
+
+  $('input[name=firstName]').on('click',function(){
+    $('.Amanda').addClass('animated bounceInRight').css('visibility', 'visible')
+  });
+});
+
+$(function(){
+
+  $('input[name=firstName]').on('click',function(){
+    $('.Chris').addClass('animated bounceInRight').css('visibility', 'visible')
+  });
+});
+
+
+</script>
+</body>
+
+
+<!-- Credits
+
+Theme inspired by Robby Leonardi's Interactive resume - http://www.rleonardi.com/interactive-resume/
+
+Background images & characters created by Sukhada Rahalkar - https://www.behance.net/SukhadaRahalkarArt
+
+Website design and code by Kevin Tran - https://github.com/theycallmekevo -->
+
+
+</html>
